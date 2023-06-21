@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc4e1b2330f14eac886d3cadf311c14a" Name="Diagram1">
+        <EntityTypeShape EntityType="arduinoModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="arduinoModel.tblesik" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="arduinoModel.tblsensör" Width="1.5" PointX="3" PointY="0.875" />
+        <AssociationConnector Association="arduinoModel.FK_tblsensör_tblesik" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

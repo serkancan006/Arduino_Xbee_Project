@@ -1,0 +1,16 @@
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\Arduino_Arayüz2.exe.config
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\Arduino_Arayüz2.exe
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\Arduino_Arayüz2.pdb
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\EntityFramework.dll
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\EntityFramework.xml
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.csproj.AssemblyReference.cache
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.csproj.SuggestedBindingRedirects.cache
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.Form1.resources
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.Properties.Resources.resources
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.csproj.GenerateResource.cache
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.csproj.CoreCompileInputs.cache
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.csproj.CopyComplete
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.exe
+C:\Users\SerkanCan\source\repos\Arduino_Arayüz2\Arduino_Arayüz2\obj\Debug\Arduino_Arayüz2.pdb

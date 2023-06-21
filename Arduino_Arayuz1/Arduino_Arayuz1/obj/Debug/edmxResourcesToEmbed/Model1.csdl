@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="arduinoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="arduinoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="arduinoModel.sysdiagrams" />
+    <EntitySet Name="tblesik" EntityType="arduinoModel.tblesik" />
+    <EntitySet Name="tblsensör" EntityType="arduinoModel.tblsensör" />
+    <AssociationSet Name="FK_tblsensör_tblesik" Association="arduinoModel.FK_tblsensör_tblesik">
+      <End Role="tblesik" EntitySet="tblesik" />
+      <End Role="tblsensör" EntitySet="tblsensör" />
+    </AssociationSet>
+    <FunctionImport Name="birlestirme" ReturnType="Collection(arduinoModel.birlestirme_Result)" />
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblesik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="esikdegeri" Type="Int32" />
+    <NavigationProperty Name="tblsensör" Relationship="arduinoModel.FK_tblsensör_tblesik" FromRole="tblesik" ToRole="tblsensör" />
+  </EntityType>
+  <EntityType Name="tblsensör">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deger" Type="Int32" />
+    <Property Name="zaman" Type="DateTime" Precision="3" />
+    <Property Name="esikid" Type="Int32" />
+    <NavigationProperty Name="tblesik" Relationship="arduinoModel.FK_tblsensör_tblesik" FromRole="tblsensör" ToRole="tblesik" />
+  </EntityType>
+  <Association Name="FK_tblsensör_tblesik">
+    <End Type="arduinoModel.tblesik" Role="tblesik" Multiplicity="0..1" />
+    <End Type="arduinoModel.tblsensör" Role="tblsensör" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblesik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tblsensör">
+        <PropertyRef Name="esikid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="birlestirme_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Sensör_Adı" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Sensör_Değeri" Nullable="true" />
+    <Property Type="DateTime" Name="Zaman" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Esik_Degeri" Nullable="true" />
+  </ComplexType>
+</Schema>
